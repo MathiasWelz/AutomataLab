@@ -1,0 +1,42 @@
+# Go
+backend/bin/
+backend/dist/
+backend/.env
+backend/*.log
+
+# Node/Expo
+mobile/node_modules/
+mobile/.expo
+mobile/.expo-shared
+mobile/dist/
+mobile/npm-debug.log
+mobile/.env
+mobile/.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+*.log
+logs/
+
+# Misc
+.turbo/
+.cache/
