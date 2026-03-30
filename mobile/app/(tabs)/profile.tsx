@@ -1,4 +1,5 @@
 import { StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native';
+import React from 'react';
 import { ThemedText } from '../../components/ThemedText';
 import { useStore } from '../../lib/store';
 import FontAwesome from '@expo/vector-icons/FontAwesome';

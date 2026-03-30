@@ -1,4 +1,5 @@
 import { StyleSheet, View, ScrollView, TextInput, TouchableOpacity, Alert } from 'react-native';
+import React from 'react';
 import { ThemedText } from '../../components/ThemedText';
 import { useState } from 'react';
 import { useStore } from '../../lib/store';
