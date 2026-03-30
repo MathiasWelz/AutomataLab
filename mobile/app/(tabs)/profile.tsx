@@ -1,5 +1,4 @@
 import { StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native';
-import React from 'react';
 import { ThemedText } from '../../components/ThemedText';
 import { useStore } from '../../lib/store';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
@@ -20,71 +19,71 @@ export default function ProfileScreen() {
             <FontAwesome name="user-circle" size={64} color="#007AFF" />
           </View>
           <ThemedText style={styles.username}>Student</ThemedText>
-          <ThemedText style={styles.email}>learning@automatalab.com</ThemedText>
+          <ThemedText style={styles.email}>learning@automatalab.com</ThemedText >
         </View>
 
         <View style={styles.statsContainer}>
           <View style={styles.statCard}>
-            <ThemedText style={styles.statNumber}>{automata.length}</ThemedText>
-            <ThemedText style={styles.statLabel}>Automata Created</ThemedText>
+            <ThemedText style={styles.statNumber}>{automata.length}</ThemedText >
+            <ThemedText style={styles.statLabel}>Automata Created</ThemedText >
           </View>
           <View style={styles.statCard}>
-            <ThemedText style={styles.statNumber}>0</ThemedText>
-            <ThemedText style={styles.statLabel}>Lessons Completed</ThemedText>
+            <ThemedText style={styles.statNumber}>0</ThemedText >
+            <ThemedText style={styles.statLabel}>Lessons Completed</ThemedText >
           </View>
           <View style={styles.statCard}>
-            <ThemedText style={styles.statNumber}>0</ThemedText>
-            <ThemedText style={styles.statLabel}>Test Passed</ThemedText>
+            <ThemedText style={styles.statNumber}>0</ThemedText >
+            <ThemedText style={styles.statLabel}>Test Passed</ThemedText >
           </View>
         </View>
 
         <View style={styles.section}>
-          <ThemedText style={styles.sectionTitle}>Recent Automata</ThemedText>
+          <ThemedText style={styles.sectionTitle}>Recent Automata</ThemedText >
           {automata.length > 0 ? (
             automata.slice(-3).map((dfa) => (
               <View key={dfa.id} style={styles.automataItem}>
                 <FontAwesome name="cog" size={16} color="#007AFF" />
-                <ThemedText style={styles.automataItemText}>{dfa.name}</ThemedText>
+                <ThemedText style={styles.automataItemText}>{dfa.name}</ThemedText >
               </View>
             ))
           ) : (
-            <ThemedText style={styles.emptyText}>No automata created yet</ThemedText>
+            <ThemedText style={styles.emptyText}>No automata created yet</ThemedText >
           )}
         </View>
 
         <View style={styles.section}>
-          <ThemedText style={styles.sectionTitle}>Progress</ThemedText>
+          <ThemedText style={styles.sectionTitle}>Progress</ThemedText >
           <View style={styles.progressItem}>
-            <ThemedText style={styles.progressLabel}>Formal Languages</ThemedText>
+            <ThemedText style={styles.progressLabel}>Formal Languages</ThemedText >
             <View style={styles.progressBar}>
               <View style={[styles.progressFill, { width: '40%' }]} />
             </View>
-            <ThemedText style={styles.progressPercent}>40%</ThemedText>
+            <ThemedText style={styles.progressPercent}>40%</ThemedText >
           </View>
           <View style={styles.progressItem}>
-            <ThemedText style={styles.progressLabel}>Automata Theory</ThemedText>
+            <ThemedText style={styles.progressLabel}>Automata Theory</ThemedText >
             <View style={styles.progressBar}>
               <View style={[styles.progressFill, { width: '25%' }]} />
             </View>
-            <ThemedText style={styles.progressPercent}>25%</ThemedText>
+            <ThemedText style={styles.progressPercent}>25%</ThemedText >
           </View>
           <View style={styles.progressItem}>
-            <ThemedText style={styles.progressLabel}>Computability</ThemedText>
+            <ThemedText style={styles.progressLabel}>Computability</ThemedText >
             <View style={styles.progressBar}>
               <View style={[styles.progressFill, { width: '10%' }]} />
             </View>
-            <ThemedText style={styles.progressPercent}>10%</ThemedText>
+            <ThemedText style={styles.progressPercent}>10%</ThemedText >
           </View>
         </View>
 
         <TouchableOpacity style={styles.dangerButton} onPress={handleClear}>
           <FontAwesome name="trash" size={16} color="#FFFFFF" />
-          <ThemedText style={styles.dangerButtonText}>Clear All Automata</ThemedText>
+          <ThemedText style={styles.dangerButtonText}>Clear All Automata</ThemedText >
         </TouchableOpacity>
 
         <View style={styles.footer}>
-          <ThemedText style={styles.footerText}>AutomataLab v1.0.0</ThemedText>
-          <ThemedText style={styles.footerText}>Based on Peter Linz's Textbook</ThemedText>
+          <ThemedText style={styles.footerText}>AutomataLab v1.0.0</ThemedText >
+          <ThemedText style={styles.footerText}>Based on Peter Linz's Textbook</ThemedText >
         </View>
       </View>
     </ScrollView>

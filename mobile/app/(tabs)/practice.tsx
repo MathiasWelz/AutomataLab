@@ -112,7 +112,7 @@ export default function PracticeScreen() {
           <View style={styles.automataList}>
             <ThemedText style={styles.listTitle}>Your Automata ({automata.length})</ThemedText>
             {automata.map((dfa) => (
-              <View key={dfa.id} style={styles.automataCard}>
+              <View style={styles.automataCard} key={dfa.id}>
                 <ThemedText style={styles.automataName}>{dfa.name}</ThemedText>
                 <ThemedText style={styles.automataDetail}>
                   States: {dfa.states.join(', ')}
